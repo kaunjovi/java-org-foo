@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+   jcenter()
+}
+
+mainClassName = 'hello.HelloWorld'
+
+dependencies {
+
+	compile group: 'org.jsoup', name: 'jsoup', version: '1.12.1'
+	
+	// https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12
+	testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.28'
+	
+
+  	testCompile 'junit:junit:4.12'
+  	testCompile group: 'com.h2database', name: 'h2', version: '1.4.199'
+  	// https://mvnrepository.com/artifact/org.jsoup/jsoup
+
+}
+
+
+test {
+  filter {
+    //specific test method
+    includeTestsMatching "org.foo.TestLaunchPad"
+   }
+}
