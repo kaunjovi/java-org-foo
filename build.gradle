@@ -25,6 +25,6 @@ dependencies {
 test {
   filter {
     //specific test method
-    includeTestsMatching "org.foo.TestLaunchPad"
+    includeTestsMatching "org.foo.webscraper.TestJsoup"
    }
 }
