@@ -1,4 +1,13 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'hello.HelloWorld'
+mainClassName = 'org.foo.HelloWorld'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.0'
+  compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.0'
+}
