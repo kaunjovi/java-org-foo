@@ -20,3 +20,8 @@ gradle-app.setting
 .classpath
 .project
 /bin
+
+## You dont want to lug the data around in git. 
+## These are data that the analytics code worked upon. 
+## Generally this is data that is available freely in open forums. 
+src/test/resources/data
